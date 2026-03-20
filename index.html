@@ -1,59 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CarScene Privacy Policy</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: auto;
-      padding: 20px;
-      line-height: 1.6;
-      background-color: #ffffff;
-      color: #000000;
+    :root {
+      --bg: #f5f5f7;
+      --card: #ffffff;
+      --text: #1d1d1f;
+      --subtle: #6e6e73;
+      --line: #d2d2d7;
+      --link: #06c;
     }
-    h1, h2 {
-      color: #111111;
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    .topbar {
+      width: 100%;
+      background: rgba(245, 245, 247, 0.8);
+      backdrop-filter: saturate(180%) blur(20px);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .topbar-inner {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 14px 20px;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+
+    .hero {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 56px 20px 28px;
+    }
+
+    .eyebrow {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--subtle);
+      letter-spacing: -0.01em;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: clamp(40px, 7vw, 64px);
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      margin: 0 0 16px;
+      font-weight: 700;
+    }
+
+    .intro {
+      max-width: 720px;
+      font-size: 21px;
+      line-height: 1.38;
+      color: var(--subtle);
+      letter-spacing: -0.01em;
+      margin: 0;
+    }
+
+    .content-wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 20px 80px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 24px;
+      padding: 32px;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+      border: 1px solid rgba(0, 0, 0, 0.04);
+    }
+
+    .meta {
+      font-size: 14px;
+      color: var(--subtle);
+      margin-bottom: 28px;
+    }
+
+    .section {
+      padding: 24px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .section:first-of-type {
+      border-top: none;
+      padding-top: 0;
+    }
+
+    h2 {
+      font-size: 24px;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      margin: 0 0 14px;
+      font-weight: 600;
+    }
+
+    p {
+      margin: 0 0 14px;
+      font-size: 17px;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 22px;
+    }
+
+    li {
+      margin: 8px 0;
+      font-size: 17px;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0 20px 56px;
+      color: var(--subtle);
+      font-size: 13px;
+    }
+
+    @media (max-width: 640px) {
+      .hero {
+        padding-top: 40px;
+      }
+
+      .intro {
+        font-size: 19px;
+      }
+
+      .card {
+        padding: 24px 20px;
+        border-radius: 18px;
+      }
+
+      h2 {
+        font-size: 22px;
+      }
+
+      p, li {
+        font-size: 16px;
+      }
     }
   </style>
 </head>
 <body>
+  <div class="topbar">
+    <div class="topbar-inner">CarScene</div>
+  </div>
 
-<h1>Privacy Policy for CarScene</h1>
+  <header class="hero">
+    <div class="eyebrow">Legal</div>
+    <h1>Privacy Policy</h1>
+    <p class="intro">
+      This Privacy Policy explains how CarScene collects, uses, and protects information when you use the app.
+    </p>
+  </header>
 
-<p>Last updated: March 2026</p>
+  <main class="content-wrap">
+    <section class="card">
+      <div class="meta">Last updated: March 20, 2026</div>
 
-<h2>1. Information We Collect</h2>
-<p>We collect the following information:</p>
-<ul>
-  <li>Email address (for account creation and login)</li>
-  <li>App data such as cars seen, garages, and collection progress</li>
-</ul>
+      <div class="section">
+        <h2>1. Information We Collect</h2>
+        <p>We may collect the following information when you use CarScene:</p>
+        <ul>
+          <li>Email address, for account creation, sign-in, and account management</li>
+          <li>App data such as cars seen, garages, collection progress, and other saved preferences</li>
+          <li>Basic technical information required for authentication and secure cloud syncing</li>
+        </ul>
+      </div>
 
-<h2>2. How We Use Your Information</h2>
-<p>Your data is used to:</p>
-<ul>
-  <li>Save your progress</li>
-  <li>Sync your data across devices</li>
-  <li>Improve the app experience</li>
-</ul>
+      <div class="section">
+        <h2>2. How We Use Information</h2>
+        <p>We use the information we collect to:</p>
+        <ul>
+          <li>Save your progress</li>
+          <li>Sync your data across devices</li>
+          <li>Provide app functionality and account access</li>
+          <li>Maintain and improve the CarScene experience</li>
+        </ul>
+      </div>
 
-<h2>3. Data Storage</h2>
-<p>Your data is securely stored using Google Firebase services.</p>
-<p>We do not store photos on our servers.</p>
+      <div class="section">
+        <h2>3. Data Storage</h2>
+        <p>Your data is stored using Google Firebase services.</p>
+        <p>
+          CarScene does not store photos on its own servers. If photos are used in the app, they remain on your device unless a future feature clearly states otherwise.
+        </p>
+      </div>
 
-<h2>4. Data Sharing</h2>
-<p>We do not sell, trade, or share your personal data with third parties.</p>
+      <div class="section">
+        <h2>4. Data Sharing</h2>
+        <p>
+          CarScene does not sell your personal information. We do not trade or rent your data to third parties.
+        </p>
+        <p>
+          Information may be processed by trusted service providers only as needed to operate the app, such as Firebase for authentication and cloud data storage.
+        </p>
+      </div>
 
-<h2>5. Third-Party Services</h2>
-<p>We use Firebase (by Google) for authentication and data storage.</p>
+      <div class="section">
+        <h2>5. Third-Party Services</h2>
+        <p>CarScene uses third-party services that may process limited information in order to provide app functionality, including:</p>
+        <ul>
+          <li>Google Firebase Authentication</li>
+          <li>Google Firebase Firestore or related Firebase cloud services</li>
+        </ul>
+      </div>
 
-<h2>6. Your Rights</h2>
-<p>You may request deletion of your data by contacting us.</p>
+      <div class="section">
+        <h2>6. Your Choices</h2>
+        <p>You may request deletion of your account or associated data by contacting us.</p>
+        <p>
+          You may also choose not to create an account, although some features such as cloud backup and syncing may then be unavailable.
+        </p>
+      </div>
 
-<h2>7. Contact</h2>
-<p>If you have any questions, contact me at: masonhenrie2003@gmail.com</p>
+      <div class="section">
+        <h2>7. Children’s Privacy</h2>
+        <p>
+          CarScene is not intended to knowingly collect personal information from children without appropriate permission where required by law.
+        </p>
+      </div>
 
+      <div class="section">
+        <h2>8. Changes to This Policy</h2>
+        <p>
+          This Privacy Policy may be updated from time to time. Any updates will be posted on this page, and the “Last updated” date will be revised accordingly.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>9. Contact</h2>
+        <p>
+          If you have any questions about this Privacy Policy or would like to request data deletion, contact:
+        </p>
+        <p><a href="mailto:youremail@example.com">masonhenrie2003@gmail.com</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    © 2026 CarScene. All rights reserved.
+  </footer>
 </body>
 </html>
