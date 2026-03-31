@@ -14,13 +14,9 @@
       --link: #06c;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
@@ -29,7 +25,6 @@
       color: var(--text);
       line-height: 1.65;
       -webkit-font-smoothing: antialiased;
-      text-rendering: optimizeLegibility;
     }
 
     .topbar {
@@ -48,7 +43,6 @@
       padding: 14px 20px;
       font-size: 14px;
       font-weight: 600;
-      letter-spacing: -0.01em;
     }
 
     .hero {
@@ -61,14 +55,12 @@
       font-size: 13px;
       font-weight: 600;
       color: var(--subtle);
-      letter-spacing: -0.01em;
       margin-bottom: 10px;
     }
 
     h1 {
       font-size: clamp(40px, 7vw, 64px);
       line-height: 1.05;
-      letter-spacing: -0.03em;
       margin: 0 0 16px;
       font-weight: 700;
     }
@@ -76,9 +68,7 @@
     .intro {
       max-width: 720px;
       font-size: 21px;
-      line-height: 1.38;
       color: var(--subtle);
-      letter-spacing: -0.01em;
       margin: 0;
     }
 
@@ -93,7 +83,6 @@
       border-radius: 24px;
       padding: 32px;
       box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
-      border: 1px solid rgba(0, 0, 0, 0.04);
     }
 
     .meta {
@@ -114,35 +103,17 @@
 
     h2 {
       font-size: 24px;
-      line-height: 1.2;
-      letter-spacing: -0.02em;
-      margin: 0 0 14px;
+      margin-bottom: 14px;
       font-weight: 600;
     }
 
-    p {
-      margin: 0 0 14px;
-      font-size: 17px;
-    }
+    p { margin: 0 0 14px; font-size: 17px; }
 
-    ul {
-      margin: 0;
-      padding-left: 22px;
-    }
+    ul { padding-left: 22px; }
+    li { margin: 8px 0; font-size: 17px; }
 
-    li {
-      margin: 8px 0;
-      font-size: 17px;
-    }
-
-    a {
-      color: var(--link);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
     .footer {
       max-width: 980px;
@@ -150,29 +121,6 @@
       padding: 0 20px 56px;
       color: var(--subtle);
       font-size: 13px;
-    }
-
-    @media (max-width: 640px) {
-      .hero {
-        padding-top: 40px;
-      }
-
-      .intro {
-        font-size: 19px;
-      }
-
-      .card {
-        padding: 24px 20px;
-        border-radius: 18px;
-      }
-
-      h2 {
-        font-size: 22px;
-      }
-
-      p, li {
-        font-size: 16px;
-      }
     }
   </style>
 </head>
@@ -195,34 +143,35 @@
 
       <div class="section">
         <h2>1. Information We Collect</h2>
-        <p>We may collect the following information when you use CarScene:</p>
         <ul>
-          <li>Email address, for account creation, sign-in, and account management</li>
-          <li>Username and profile-related information you choose to use in the app</li>
-          <li>App data such as cars seen, garages, collection progress, friends data, and saved preferences</li>
-          <li>Basic technical information required for authentication, cloud syncing, security, and app functionality</li>
+          <li>Email address for account creation and authentication</li>
+          <li>Username and profile information</li>
+          <li>App data such as cars seen, garages, and collection progress</li>
+          <li>Friends and social interaction data</li>
+          <li>Basic technical data needed for app functionality and security</li>
         </ul>
       </div>
 
       <div class="section">
         <h2>2. How We Use Information</h2>
-        <p>We use the information we collect to:</p>
         <ul>
           <li>Save your progress</li>
           <li>Sync your data across devices</li>
-          <li>Provide app functionality, including account and social features</li>
-          <li>Let you connect with friends and view supported profile information</li>
-          <li>Maintain, secure, and improve the CarScene experience</li>
+          <li>Enable social features and friend connections</li>
+          <li>Provide and improve the app experience</li>
         </ul>
       </div>
 
       <div class="section">
         <h2>3. Social Features</h2>
         <p>
-          CarScene includes optional social features such as adding friends, viewing profiles, and comparing collections.
+          CarScene includes optional social features such as searching for users, sending friend requests, and viewing profiles.
         </p>
         <p>
-          When you use these features, certain information may be visible to other users within the app, including:
+          Your username may be searchable within the app so that other users can send you a friend request.
+        </p>
+        <p>
+          If you accept a friend request, the following information may be visible to that friend:
         </p>
         <ul>
           <li>Your username</li>
@@ -232,7 +181,10 @@
           <li>Your selected dream garages</li>
         </ul>
         <p>
-          This information is shown as part of the app’s social and profile features. By using these features, you understand that this information may be visible to other users you connect with in the app.
+          This information is only shared after you accept a friend request.
+        </p>
+        <p>
+          You can control whether information is shared by choosing whether to accept or decline friend requests.
         </p>
       </div>
 
@@ -240,65 +192,56 @@
         <h2>4. Data Storage</h2>
         <p>Your data is stored using Google Firebase services.</p>
         <p>
-          CarScene does not store photos on its own servers. If photos are used in the app, they remain on your device unless a future feature clearly states otherwise.
+          Photos remain on your device unless a feature explicitly states otherwise.
         </p>
       </div>
 
       <div class="section">
         <h2>5. Data Sharing</h2>
         <p>
-          CarScene does not sell your personal information. We do not trade or rent your data to third parties.
+          CarScene does not sell your personal information.
         </p>
         <p>
-          Information may be processed by trusted service providers only as needed to operate the app, such as Firebase for authentication and cloud data storage.
+          Data may be processed by trusted services such as Firebase for authentication and storage.
         </p>
         <p>
-          In addition, certain profile and collection information may be visible to other users inside the app when you use social features.
+          Profile and collection data may be visible to other users only through accepted friend connections.
         </p>
       </div>
 
       <div class="section">
         <h2>6. Third-Party Services</h2>
-        <p>CarScene uses third-party services that may process limited information in order to provide app functionality, including:</p>
         <ul>
           <li>Google Firebase Authentication</li>
-          <li>Google Firebase Firestore or related Firebase cloud services</li>
+          <li>Google Firebase Firestore</li>
         </ul>
       </div>
 
       <div class="section">
         <h2>7. Your Choices</h2>
-        <p>
-          You may choose not to use social features, although some profile and friends functionality may then be unavailable.
-        </p>
-        <p>
-          You may also choose not to create an account, although some features such as cloud backup, syncing, friends, and profile functionality may then be unavailable.
-        </p>
-        <p>
-          You may request deletion of your account and associated data through the app or by contacting us.
-        </p>
+        <p>You may choose not to use social features.</p>
+        <p>You may request account and data deletion at any time.</p>
       </div>
 
       <div class="section">
         <h2>8. Children’s Privacy</h2>
         <p>
-          CarScene is not intended to knowingly collect personal information from children without appropriate permission where required by law.
+          CarScene does not knowingly collect personal information from children without required permission.
         </p>
       </div>
 
       <div class="section">
         <h2>9. Changes to This Policy</h2>
         <p>
-          This Privacy Policy may be updated from time to time. Any updates will be posted on this page, and the “Last updated” date will be revised accordingly.
+          Updates will be posted here with a revised date.
         </p>
       </div>
 
       <div class="section">
         <h2>10. Contact</h2>
         <p>
-          If you have any questions about this Privacy Policy or would like to request data deletion, contact:
+          <a href="mailto:henriestudios@gmail.com">henriestudios@gmail.com</a>
         </p>
-        <p><a href="mailto:henriestudios@gmail.com">henriestudios@gmail.com</a></p>
       </div>
     </section>
   </main>
